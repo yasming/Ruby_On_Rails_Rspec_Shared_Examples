@@ -10,8 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_08_201252) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_11_190800) do
+  create_table "activities", force: :cascade do |t|
+    t.string "origin_type", null: false
+    t.integer "origin_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["origin_type", "origin_id"], name: "index_activities_on_origin"
+  end
+
+  create_table "tasks", force: :cascade do |t|
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
