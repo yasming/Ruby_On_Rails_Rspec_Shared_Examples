@@ -1,24 +1,26 @@
-# README
+# Ruby_On_Rails_Rspec_Shared_Examples
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an example application demonstrating how to use shared_examples in rspec to improve readability and clarity of your test code.
 
-Things you may want to cover:
+Medium article explaining the purpose of the application better:*https://medium.com/@yasmin_12961/how-to-safely-improve-and-refactor-code-with-hash-maps-and-tests-in-laravel-479d3376abf9*
 
-* Ruby version
+## Prerequisites
 
-* System dependencies
+```
+Ruby 3.1.2 
+```
 
-* Configuration
+```
+Rails 7.0.0
+```
 
-* Database creation
+## Getting started
 
-* Database initialization
 
-* How to run the test suite
+```
+bundle install
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+rspec
+```
